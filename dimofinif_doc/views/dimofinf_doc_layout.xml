@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="custom_external_layout_boxed" inherit_id="web.external_layout_boxed">
+
         <!-- Replace the Header -->
         <xpath expr="//div[@class='o_boxed_header']" position="replace">
-            <div class="o_boxed_header" style="border-bottom: 2px solid #000; padding-bottom: 10px;">
+            <div class="o_boxed_header" style="border-bottom: 2px solid #FF8800; padding-bottom: 10px;">
                 <div class="row mb8">
                     <!-- Logo Section -->
                     <div class="col-6">
                         <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
                              alt="Company Logo"
                              style="max-height: 80px; margin-top: 5px;" />
-                        <p style="margin-top: 5px; font-size: 12px; color: #007bff; font-weight: 600;">
-                        </p>
                     </div>
 
                     <!-- Address Section -->
-                    <div class="col-6 text-end mb4" style="font-size: 14.4px;">
-                        <p style="font-weight: bold; font-size: 19.2px; margin: 0; color: #333;">Dimofinf</p>
-                        <ul class="list-unstyled" style="margin: 0; padding: 0; list-style: none; color: #555;">
-                            <li style="font-size: 14.4px;">Building no. 2759</li>
-                            <li style="font-size: 14.4px;">Prince Mishaal Bin Abdulaziz St.</li>
-                            <li style="font-size: 14.4px;">Irqah District - Riyadh City</li>
-                            <li style="font-size: 14.4px;">Saudi Arabia</li>
-                            <li style="font-size: 14.4px;">
-                                <i class="fa fa-phone" style="margin-right: 5px; color: #007bff;"></i>
-                                +966 92 0031 132
-                            </li>
-                        </ul>
+                    <div class="col-6 text-end mb4" style="font-size: 14px;">
+                        <p style="font-weight: bold; font-size: 20px; margin: 0; color: #000;">Dimofinf</p>
+                        <p style="margin: 0; color: #333;">Building no. 2759</p>
+                        <p style="margin: 0; color: #333;">Prince Mishaal Bin Abdulaziz St.</p>
+                        <p style="margin: 0; color: #333;">Irqah District - Riyadh City</p>
+                        <p style="margin: 0; color: #333;">Saudi Arabia</p>
+                        <p style="margin: 0; color: #FF8800;">
+                            <i class="fa fa-phone" style="margin-right: 5px;"></i>
+                            +966 92 0031 132
+                        </p>
                     </div>
                 </div>
             </div>
@@ -34,17 +31,29 @@
 
         <!-- Replace the Footer -->
         <xpath expr="//div[@class='text-center']" position="replace">
-            <div class="text-center" style="font-size: 10px; color: #666; padding-top: 10px; border-top: 2px solid #ddd;">
-                <div>
-                    <strong>Dimofinf Company</strong> | Building no. 2759 | Prince Mishaal Bin Abdulaziz St., Irqah District, Riyadh City, Saudi Arabia
+            <div class="d-flex justify-content-between align-items-center" style="font-size: 10px; color: #666; padding-top: 10px; border-top: 2px solid #FF8800;">
+
+                <!-- QR Code on the Left -->
+                <div style="border: 2px solid #FF8800; padding: 5px; display: inline-block;">
+                    <img src="/dimofinif_doc/static/src/img/qrcode.png" alt="QR Code" style="height: 60px;" />
                 </div>
-                <div>
-                    Phone: +966 92 0031 132 | Website: <a href="http://www.dimofinf.sa" style="color: #007bff;">www.dimofinf.sa</a>
+
+                <!-- Footer Text on the Right -->
+                <div class="text-end">
+                    <div>
+                        <strong>Dimofinf</strong> | Building no. 2759 | Prince Mishaal Bin Abdulaziz St., Irqah District, Riyadh City, Saudi Arabia
+                    </div>
+                    <div>
+                        Phone: +966 92 0031 132 | Website:
+                        <a href="http://www.dimofinf.sa" style="color: #FF8800;">www.dimofinf.sa</a>
+                    </div>
+                    <div t-if="report_type == 'pdf'" class="text-muted">
+                        Page: <span class="page"/> / <span class="topage"/>
+                    </div>
                 </div>
-                <div t-if="report_type == 'pdf'" class="text-muted">
-                    Page: <span class="page"/> / <span class="topage"/>
-                </div>
+
             </div>
         </xpath>
+
     </template>
 </odoo>
