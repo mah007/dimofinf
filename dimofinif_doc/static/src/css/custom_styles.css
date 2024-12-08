@@ -1,0 +1,9 @@
+/* Ensure all styles are properly closed */
+footer {
+    font-size: 10px;
+    text-align: center;
+}
+header {
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
