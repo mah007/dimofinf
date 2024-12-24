@@ -2,7 +2,7 @@
 <odoo>
     <template id="custom_report_invoice" inherit_id="account.report_invoice_document">
         <xpath expr="//t[@t-call='web.external_layout']" position="replace">
-            <t t-call="dimofinf_doc.custom_external_layout_standard"/>
+            <t t-call="custom_external_layout_standard"/>
         </xpath>
     </template>
 </odoo>

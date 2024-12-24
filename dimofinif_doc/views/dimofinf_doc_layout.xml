@@ -14,16 +14,18 @@
                     </div>
 
                     <!-- Address Section -->
-                    <div class="col-6 text-end mb4" style="font-size: 14px;">
-                        <p style="font-weight: bold; font-size: 20px; margin: 0; color: #000;">Dimofinf</p>
-                        <p style="margin: 0; color: #333;">Building no. 2759</p>
-                        <p style="margin: 0; color: #333;">Prince Mishaal Bin Abdulaziz St.</p>
-                        <p style="margin: 0; color: #333;">Irqah District - Riyadh City</p>
-                        <p style="margin: 0; color: #333;">Saudi Arabia</p>
-                        <p style="margin: 0; color: #FF8800;">
-                            <i class="fa fa-phone" style="margin-right: 5px;"></i>
-                            +966 92 0031 132
-                        </p>
+                   <div class="col-6" style="text-align: left; float: right;">
+                        <div style="font-size: 15px;">
+                            <p style="font-weight: bold; font-size: 20px; margin: 0; color: #000;">Dimofinf</p>
+                            <p style="margin: 0; color: #333;">Building no. 2759</p>
+                            <p style="margin: 0; color: #333; padding-right: 52;">Prince Mishaal Bin Abdulaziz St.</p>
+                            <p style="margin: 0; color: #333;">Irqah District - Riyadh City</p>
+                            <p style="margin: 0; color: #333;">Saudi Arabia</p>
+                            <p style="margin: 0; color: #FF8800;">
+                                <i class="fa fa-phone" style="margin-right: 5px;"></i>
+                                +966 92 0031 132
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

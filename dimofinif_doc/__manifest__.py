@@ -10,7 +10,7 @@
     'depends': ['base', 'web', 'account'],
     'data': [
         'views/dimofinf_doc_layout.xml',
-        'views/report_invoice_custom.xml',
+        # 'views/report_invoice_custom.xml',
     ],
     # 'assets': {
     #     'web.assets_backend': [
