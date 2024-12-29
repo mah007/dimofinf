@@ -1,0 +1,70 @@
+
+<odoo>
+    <data noupdate="1">
+        <!-- English Templates -->
+        <record id="email_template_suspend_account" model="mail.template">
+            <field name="name">Suspend Account Notification</field>
+            <field name="model_id" ref="model_cpanel_account"/>
+            <field name="subject">Account Suspension Notice</field>
+            <field name="email_from">${(user.email or 'noreply@example.com')}</field>
+            <field name="email_to">${object.email or ''}</field>
+            <field name="body_html">
+                <![CDATA[
+                    <p>Dear ${object.name},</p>
+                    <p>Your account associated with the domain <strong>${object.domain}</strong> has been suspended due to non-payment.</p>
+                    <p>Please contact our support team to resolve this issue.</p>
+                    <p>Thank you,<br/>The Dimofinf Team</p>
+                ]]>
+            </field>
+        </record>
+
+        <record id="email_template_terminate_account" model="mail.template">
+            <field name="name">Terminate Account Notification</field>
+            <field name="model_id" ref="model_cpanel_account"/>
+            <field name="subject">Account Termination Notice</field>
+            <field name="email_from">${(user.email or 'noreply@example.com')}</field>
+            <field name="email_to">${object.email or ''}</field>
+            <field name="body_html">
+                <![CDATA[
+                    <p>Dear ${object.name},</p>
+                    <p>Your account associated with the domain <strong>${object.domain}</strong> has been terminated due to non-payment for more than 14 days.</p>
+                    <p>If you believe this is an error, please contact our support team immediately.</p>
+                    <p>Thank you,<br/>The Dimofinf Team</p>
+                ]]>
+            </field>
+        </record>
+
+        <!-- Arabic Templates -->
+        <record id="email_template_suspend_account_ar" model="mail.template">
+            <field name="name">إشعار تعليق الحساب</field>
+            <field name="model_id" ref="model_cpanel_account"/>
+            <field name="subject">إشعار تعليق الحساب</field>
+            <field name="email_from">${(user.email or 'noreply@example.com')}</field>
+            <field name="email_to">${object.email or ''}</field>
+            <field name="body_html">
+                <![CDATA[
+                    <p>عزيزي ${object.name}،</p>
+                    <p>تم تعليق حسابك المرتبط بالنطاق <strong>${object.domain}</strong> بسبب عدم السداد.</p>
+                    <p>يرجى الاتصال بفريق الدعم لحل هذه المشكلة.</p>
+                    <p>شكرًا لك،<br/>فريق Dimofinf</p>
+                ]]>
+            </field>
+        </record>
+
+        <record id="email_template_terminate_account_ar" model="mail.template">
+            <field name="name">إشعار إنهاء الحساب</field>
+            <field name="model_id" ref="model_cpanel_account"/>
+            <field name="subject">إشعار إنهاء الحساب</field>
+            <field name="email_from">${(user.email or 'noreply@example.com')}</field>
+            <field name="email_to">${object.email or ''}</field>
+            <field name="body_html">
+                <![CDATA[
+                    <p>عزيزي ${object.name}،</p>
+                    <p>تم إنهاء حسابك المرتبط بالنطاق <strong>${object.domain}</strong> بسبب عدم السداد لمدة تزيد عن 14 يومًا.</p>
+                    <p>إذا كنت تعتقد أن هذا خطأ، يرجى الاتصال بفريق الدعم فورًا.</p>
+                    <p>شكرًا لك،<br/>فريق Dimofinf</p>
+                ]]>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,23 @@
+
+<odoo>
+    <record id="view_datacenter_form" model="ir.ui.view">
+        <field name="name">datacenter.form</field>
+        <field name="model">cpanel.datacenter</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="location"/>
+                        <field name="api_url"/>
+                        <field name="api_token"/>
+                        <field name="servers" widget="many2many_tags"/>
+                    </group>
+                    <footer>
+                        <button string="Fetch Servers" type="object" name="fetch_servers" class="btn-primary"/>
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

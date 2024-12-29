@@ -1,0 +1,22 @@
+
+<odoo>
+    <data>
+        <record id="cron_suspend_overdue_accounts" model="ir.cron">
+            <field name="name">Suspend Overdue Accounts</field>
+            <field name="model_id" ref="model_cpanel_account"/>
+            <field name="state">code</field>
+            <field name="code">model._suspend_overdue_accounts()</field>
+            <field name="interval_type">daily</field>
+            <field name="numbercall">-1</field>
+        </record>
+
+        <record id="cron_suspend_exceeding_bandwidth_accounts" model="ir.cron">
+            <field name="name">Suspend Exceeding Bandwidth Accounts</field>
+            <field name="model_id" ref="model_cpanel_account"/>
+            <field name="state">code</field>
+            <field name="code">model._suspend_exceeding_bandwidth_accounts()</field>
+            <field name="interval_type">daily</field>
+            <field name="numbercall">-1</field>
+        </record>
+    </data>
+</odoo>

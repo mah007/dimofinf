@@ -1,0 +1,32 @@
+
+<odoo>
+    <record id="view_cpanel_server_tree" model="ir.ui.view">
+        <field name="name">cpanel.server.tree</field>
+        <field name="model">cpanel.server</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="api_url"/>
+                <field name="max_accounts"/>
+                <field name="current_accounts"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cpanel_server_form" model="ir.ui.view">
+        <field name="name">cpanel.server.form</field>
+        <field name="model">cpanel.server</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="api_url"/>
+                        <field name="api_token"/>
+                        <field name="max_accounts"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

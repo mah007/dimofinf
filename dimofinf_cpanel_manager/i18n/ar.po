@@ -1,0 +1,68 @@
+
+msgid ""
+msgstr ""
+"Language: ar\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "File Path"
+msgstr "مسار الملف"
+
+msgid "File Size"
+msgstr "حجم الملف"
+
+msgid "Permission"
+msgstr "الصلاحية"
+
+msgid "Backup Name"
+msgstr "اسم النسخة الاحتياطية"
+
+msgid "Backup Date"
+msgstr "تاريخ النسخة الاحتياطية"
+
+msgid "Backup Size (MB)"
+msgstr "حجم النسخة الاحتياطية (ميجابايت)"
+
+msgid "Domain Name"
+msgstr "اسم الدومين"
+
+msgid "Customer"
+msgstr "العميل"
+
+msgid "Status"
+msgstr "الحالة"
+
+msgid "Registrar"
+msgstr "المسجل"
+
+msgid "Registration Date"
+msgstr "تاريخ التسجيل"
+
+msgid "Expiry Date"
+msgstr "تاريخ الانتهاء"
+
+msgid "Available"
+msgstr "متاح"
+
+msgid "Reserved"
+msgstr "محجوز"
+
+msgid "Registered"
+msgstr "مسجل"
+
+msgid "Check Availability"
+msgstr "تحقق من التوفر"
+
+msgid "API URL"
+msgstr "رابط API"
+
+msgid "API Token"
+msgstr "مفتاح API"
+
+msgid "Fetch Servers"
+msgstr "جلب السيرفرات"
+
+msgid "Failed to fetch servers"
+msgstr "فشل في جلب السيرفرات"
+
+msgid "Error connecting to Data Center API"
+msgstr "خطأ في الاتصال بـ API مركز البيانات"

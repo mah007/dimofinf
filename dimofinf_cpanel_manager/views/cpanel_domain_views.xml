@@ -1,0 +1,37 @@
+
+<odoo>
+    <record id="view_cpanel_domain_tree" model="ir.ui.view">
+        <field name="name">cpanel.domain.tree</field>
+        <field name="model">cpanel.domain</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="status"/>
+                <field name="customer_id"/>
+                <field name="registrar"/>
+                <field name="registration_date"/>
+                <field name="expiry_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_cpanel_domain_form" model="ir.ui.view">
+        <field name="name">cpanel.domain.form</field>
+        <field name="model">cpanel.domain</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="customer_id"/>
+                        <field name="status"/>
+                        <field name="registrar"/>
+                        <field name="registration_date"/>
+                        <field name="expiry_date"/>
+                    </group>
+                    <button string="Check Availability" type="object" name="check_availability" class="btn-primary"/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

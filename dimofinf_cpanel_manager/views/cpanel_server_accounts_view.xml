@@ -1,0 +1,16 @@
+
+<odoo>
+    <record id="view_server_with_accounts_tree" model="ir.ui.view">
+        <field name="name">cpanel.server.with.accounts.tree</field>
+        <field name="model">cpanel.server</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="current_accounts" string="Number of Accounts"/>
+                <field name="max_accounts"/>
+                <field name="api_url"/>
+                <field name="id" widget="many2many_tags" options="{'model': 'cpanel.account'}" string="Linked Accounts"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

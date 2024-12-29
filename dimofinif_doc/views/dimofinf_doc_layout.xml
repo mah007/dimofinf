@@ -2,58 +2,21 @@
 <odoo>
     <template id="custom_external_layout_boxed" inherit_id="web.external_layout_boxed">
 
-        <!-- Replace the Header -->
+        <!-- Replace the Header with an Image -->
         <xpath expr="//div[@class='o_boxed_header']" position="replace">
-            <div class="o_boxed_header" style="border-bottom: 2px solid #FF8800; padding-bottom: 10px;">
-                <div class="row mb8">
-                    <!-- Logo Section -->
-                    <div class="col-6">
-                        <img t-if="company.logo" t-att-src="image_data_uri(company.logo)"
-                             alt="Company Logo"
-                             style="max-height: 80px; margin-top: 5px;" />
-                    </div>
-
-                    <!-- Address Section -->
-                   <div class="col-6" style="text-align: left; float: right;">
-                        <div style="font-size: 15px;">
-                            <p style="font-weight: bold; font-size: 20px; margin: 0; color: #000;">Dimofinf</p>
-                            <p style="margin: 0; color: #333;">Building no. 2759</p>
-                            <p style="margin: 0; color: #333; padding-right: 52;">Prince Mishaal Bin Abdulaziz St.</p>
-                            <p style="margin: 0; color: #333;">Irqah District - Riyadh City</p>
-                            <p style="margin: 0; color: #333;">Saudi Arabia</p>
-                            <p style="margin: 0; color: #FF8800;">
-                                <i class="fa fa-phone" style="margin-right: 5px;"></i>
-                                +966 92 0031 132
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="o_boxed_header" style="padding: 0; margin: 0;">
+                <img src="/dimofinif_doc/static/src/img/header.png"
+                     alt="Header Image"
+                     style="width: 100%; height: auto;" />
             </div>
         </xpath>
 
-        <!-- Replace the Footer -->
+        <!-- Replace the Footer with an Image -->
         <xpath expr="//div[@class='text-center']" position="replace">
-            <div class="d-flex justify-content-between align-items-center" style="font-size: 10px; color: #666; padding-top: 10px; border-top: 2px solid #FF8800;">
-
-                <!-- QR Code on the Left -->
-                <div style="border: 2px solid #FF8800; padding: 5px; display: inline-block;">
-                    <img src="/dimofinif_doc/static/src/img/qrcode.png" alt="QR Code" style="height: 60px;" />
-                </div>
-
-                <!-- Footer Text on the Right -->
-                <div class="text-end">
-                    <div>
-                        <strong>Dimofinf</strong> | Building no. 2759 | Prince Mishaal Bin Abdulaziz St., Irqah District, Riyadh City, Saudi Arabia
-                    </div>
-                    <div>
-                        Phone: +966 92 0031 132 | Website:
-                        <a href="http://www.dimofinf.sa" style="color: #FF8800;">www.dimofinf.sa</a>
-                    </div>
-                    <div t-if="report_type == 'pdf'" class="text-muted">
-                        Page: <span class="page"/> / <span class="topage"/>
-                    </div>
-                </div>
-
+            <div style="padding: 0; margin: 0; position: absolute; bottom: 0; width: 100%;">
+                <img src="/dimofinif_doc/static/src/img/footer.png"
+                     alt="Footer Image"
+                     style="width: 100%; height: auto;" />
             </div>
         </xpath>
 

@@ -1,0 +1,20 @@
+
+<odoo>
+    <record id="view_cpanel_dashboard" model="ir.ui.view">
+        <field name="name">cpanel.dashboard</field>
+        <field name="model">cpanel.server</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>Dashboard</h1>
+                    </div>
+                    <graph string="Accounts by Server">
+                        <field name="name"/>
+                        <field name="current_accounts" type="measure"/>
+                    </graph>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

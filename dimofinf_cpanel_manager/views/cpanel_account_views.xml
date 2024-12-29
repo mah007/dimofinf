@@ -1,0 +1,22 @@
+
+<odoo>
+    <record id="view_cpanel_account_form" model="ir.ui.view">
+        <field name="name">cpanel.account.form</field>
+        <field name="model">cpanel.account</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="domain"/>
+                        <field name="username"/>
+                        <field name="password"/>
+                        <field name="server_id"/>
+                        <field name="customer_id"/>
+                        <field name="state"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
