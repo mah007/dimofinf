@@ -12,12 +12,12 @@
         'views/dimofinf_doc_layout.xml',
         # 'views/report_invoice_custom.xml',
     ],
-    # 'assets': {
-    #     'web.assets_backend': [
-    #         'dimofinf_doc/static/src/css/custom_styles.css',
-    #     ],
-    # },
+    'assets': {
+        'web.report_assets_common': [
+            'dimofinif_doc/static/src/css/dds.css',
+        ],
+    },
     'installable': True,
-    'application': False,
+    'application': True,
 'license': 'LGPL-3',
 }

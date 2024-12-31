@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fatora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+  <main class="main">
+    <div class="header_line">
+      <div class="blue_line"></div>
+      <div class="orange_line"></div>
+    </div>
+    <div class="invoice-wrapper">
+      <!-- header -->
+      <header class="header">
+        <div class="logo">
+          <img src="./images/logo.png" alt="">
+        </div>
+        <div class="dimofinf_data">
+          <!-- Dimofinf Building no. 2759  Prince Mishaal Bin Abdulaziz St.  Irqah District  Riyadh City Saudi Ara -->
+          <p class="dimofinf_data_item">Dimensions Of Information</p>
+          <p class="dimofinf_data_item">2759 Prince Mishaal Bin Abdulaziz St.</p>
+          <p class="dimofinf_data_item">Riyadh, Irqah District</p>
+          <p class="dimofinf_data_item">Saudi Arabia</p>
+          <p class="dimofinf_data_item">TIN:300030623300003</p>
+          <p class="dimofinf_data_item" >
+            <img src="./images/phone.png" alt="">
+            +966 92 0031 132
+          </p>
+        </div>
+      </header>
+      <!-- qr-code section -->
+      <div class="qr-wrapper">
+        <div class="qr">
+          <img class="qr_image" src="./images/qr.png" alt="">
+        </div>
+        <div>
+          <p class="billing_title">Bill to:</p>
+          <p class="billing_title_ar">فاتورة إلي </p>
+          <p class="billing_data">أركان العقارية</p>
+          <p class="billing_data">الرقم الضريبي: 300973899090779 </p>
+          <p class="billing_data">المملكة العربية السعودية , الرياض 30034</p>
+        </div>
+      </div>
+      <!-- tax invoice -->
+      <div class="tax_invoice_wrapper">
+        <div class="tax_invoice_header">
+          <p class="tax_invoice_header_1">Tax Invoice</p>
+          <p class="tax_invoice_header_2">INV/2024/03248</p>
+          <p class="tax_invoice_header_3">فاتورة ضريبة</p>
+        </div>
+        <div class="content">
+          <span>Invoice Date :</span>
+          <span>10/29/2024</span>
+          <span>: تاريخ الفاتورة</span>
+        </div>
+        <div class="content">
+          <span>Due Date :</span>
+          <span>10/29/2024</span>
+          <span>: تاريخ الاستحقاق</span>
+        </div>
+        <div class="content">
+          <span>Delivery Date :</span>
+          <span>10/29/2024</span>
+          <span>: تاريخ التوصيل</span>
+        </div>
+      </div>
+      <!-- table total-->
+      <div class="table_wrapper">
+
+        <div class="table_header">
+          <div class="table_header_item" >
+            <p>الوصف</p>
+            <p>Description</p>
+          </div>
+          <div class="table_header_item" >
+            <p>الكمية</p>
+            <p>Quantity</p>
+          </div>
+          <div class="table_header_item" >
+            <p>سعر الوحدة</p>
+            <p>Unit Price</p>
+          </div>
+          <div class="table_header_item" >
+            <p>الضرائب</p>
+            <p>Taxes</p>
+          </div>
+          <div class="table_header_item" >
+            <p>مبلغ</p>
+            <p>Amount</p>
+          </div>
+          <div class="table_header_item" >
+            <p>قيمة الضرائب</p>
+            <p>Vat Amount</p>
+          </div>
+          <div class="table_header_item" >
+            <p>السعر الاجمالى</p>
+            <p>Total Price</p>
+          </div>
+        </div>
+        <div class="table_content">
+          <div class="table_content_item" >
+            <p></p>
+          </div>
+          <div class="table_content_item" >
+            <p></p>
+          </div>
+          <div class="table_content_item" >
+            <p></p>
+          </div>
+          <div class="table_content_item" >
+            <p></p>
+          </div>
+          <div class="table_content_item" >
+            <p></p>
+          </div>
+          <div class="table_content_item" >
+            <p></p>
+          </div>
+          <div class="table_content_item" >
+            <p></p>
+          </div>
+        </div>
+
+      </div>
+      <!-- table subtotal -->
+
+      <div class="table_wrapper">
+        <div class="table_header">
+          <p class="subtotal_title">Subtotal / الإجمالي الفرعي</p>
+        </div>
+        <div class="table_content">
+          <div class="table_content_item left" >
+            <p>Vat Taxes</p>
+          </div>
+          <div class="table_content_item left" >
+            <p></p>
+          </div>
+        </div>
+        <div class="table_content">
+          <div class="table_content_item blue_background left" >
+            <p>Total / المجموع</p>
+          </div>
+          <div class="table_content_item blue_background left" >
+            <p></p>
+          </div>
+        </div>
+        <div class="table_content">
+          <div class="table_content_item blue_background left" >
+            <p>Paid on / دفعت في</p>
+          </div>
+          <div class="table_content_item blue_background left" >
+            <p></p>
+          </div>
+        </div>
+        <div class="table_content">
+          <div class="table_content_item yellow_bacground left" >
+            <p>Amount due / المبلغ المستحق</p>
+          </div>
+          <div class="table_content_item yellow_bacground left" >
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer_qr">
+          <img src="./images/dimqr.png" alt="">
+        </div>
+        <div class="footer_content">
+          <p class="footer_item">
+            <img src="./images/pin.png" alt="">
+              Building no. 2759  Prince Mishaal Bin Abdulaziz St.  Irqah District - Riyadh City   
+          </p>
+          <p class="footer_item">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="39px" height="39px">
+              <image  x="0px" y="0px" width="39px" height="39px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAQAAAAmqpm+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfoDB4RNiTrDkIBAAAB2ElEQVRIx6WVv2tTURTHP/cZpYQYFOsiZjGDi8Rmk+BiCyouXULWVARdXASJg3SpOBgQtZulEEqz9C+QQkHEKhFcXKyIKBIhg+KUEExCjkOf+N7LvS/v3t6z3Hu/533e/XHOPUoINnWRJdo8li5uTQLGDUYIwksOCS4W7N4LDO4fEEctND+geAAcVcYR5QOHHXGU+KPRak44TtDWal1OueCaRnXdGsdCjDokb4t7Fas/s8N5HI+N8rJdUnh8itXTtrh3sRl41zZp54wHMeK6/c0qvmmVPlftw9gTYVO76g7bthsFBE4z0P7qslOSCTS02mtX3BntEyCUnXACda3a4aQbLmt4VXZIOeAEFg0eTZu6EexuGHy2mIl8dI7bXJiGO8pnA/A9ZwN+FYYIwluuxOAECvQMwD4PyAgCl0JR8Ca8yii9MlGC/tsvHnKN35HZMWscM+Ai1Tap/fiX37rjfOQAHLNGRo9TPHUACi+0OEFgxQmYNyrc8sMhufWYjVGZ56cV7o5xsz4wx25i2HPUFJxAimXD4xq2xn5mJ/CkQGuKSx3l+ybZBx5VvhvEfrDeJT4ajnCTjxPTe5wPedlcHYoSq3z1hyOekA57KHGofipHkSwt+RJV/gJWMdD0nEDMnQAAAABJRU5ErkJggg==" />
+            </svg>
+            +966 92 0031 132
+          </p>
+          <p class="footer_item">
+            <img src="./images/earth.png" alt="">
+            <a href="www.dimofinf.sa">www.dimofinf.sa</a>
+          </p>
+        </div>
+      </footer>
+
+    </div>
+    <div class="footer_line">
+      <div class="orange_line orange_line_footer"></div>
+      <div class="blue_line blue_line_footer"></div>
+    </div>
+  </main>
+</body>
+</html>

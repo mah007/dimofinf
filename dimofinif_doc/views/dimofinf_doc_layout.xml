@@ -1,24 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+
+
+
+
     <template id="custom_external_layout_boxed" inherit_id="web.external_layout_boxed">
 
-        <!-- Replace the Header with an Image -->
-        <xpath expr="//div[@class='o_boxed_header']" position="replace">
-            <div class="o_boxed_header" style="padding: 0; margin: 0;">
-                <img src="/dimofinif_doc/static/src/img/header.png"
-                     alt="Header Image"
-                     style="width: 100%; height: auto;" />
+        <!-- Replace the Header with new style -->
+
+        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">
+            <div class="header_line">
+                <div class="blue_line"></div>
+                <div class="orange_line"></div>
             </div>
+            <div class="invoice-wrapper"/>
+            <!-- header -->
+            <header class="header">
+                <div class="logo">
+                    <img src="/dimofinif_doc/static/src/img/logo.png" alt=""/>
+                </div>
+                <div class="dimofinf_data">
+                    <!-- Dimofinf Building no. 2759  Prince Mishaal Bin Abdulaziz St.  Irqah District  Riyadh City Saudi Ara -->
+                    <p class="dimofinf_data_item">Dimensions Of Information</p>
+                    <p class="dimofinf_data_item">2759 Prince Mishaal Bin Abdulaziz St.</p>
+                    <p class="dimofinf_data_item">Riyadh, Irqah District</p>
+                    <p class="dimofinf_data_item">Saudi Arabia</p>
+                    <p class="dimofinf_data_item">TIN:300030623300003</p>
+                    <p class="dimofinf_data_item">
+                        <img src="/dimofinif_doc/static/src/img/phone.png" alt=""/>
+                        +966 92 0031 132
+                    </p>
+                </div>
+            </header>
         </xpath>
+
 
         <!-- Replace the Footer with an Image -->
-        <xpath expr="//div[@class='text-center']" position="replace">
-            <div style="padding: 0; margin: 0; position: absolute; bottom: 0; width: 100%;">
-                <img src="/dimofinif_doc/static/src/img/footer.png"
-                     alt="Footer Image"
-                     style="width: 100%; height: auto;" />
-            </div>
+        <xpath expr="//div[contains(@t-attf-class, 'footer')]" position="replace">
+                 <footer class="footer">
+        <div class="footer_qr">
+          <img src="/dimofinif_doc/static/src/img/dimqr.png" alt=""/>
+        </div>
+        <div class="footer_content">
+          <p class="footer_item">
+            <img src="/dimofinif_doc/static/src/img/pin.png" alt=""/>
+              Building no. 2759  Prince Mishaal Bin Abdulaziz St.  Irqah District - Riyadh City
+          </p>
+          <p class="footer_item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="39px" height="39px">
+              <image  x="0px" y="0px" width="39px" height="39px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAQAAAAmqpm+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfoDB4RNiTrDkIBAAAB2ElEQVRIx6WVv2tTURTHP/cZpYQYFOsiZjGDi8Rmk+BiCyouXULWVARdXASJg3SpOBgQtZulEEqz9C+QQkHEKhFcXKyIKBIhg+KUEExCjkOf+N7LvS/v3t6z3Hu/533e/XHOPUoINnWRJdo8li5uTQLGDUYIwksOCS4W7N4LDO4fEEctND+geAAcVcYR5QOHHXGU+KPRak44TtDWal1OueCaRnXdGsdCjDokb4t7Fas/s8N5HI+N8rJdUnh8itXTtrh3sRl41zZp54wHMeK6/c0qvmmVPlftw9gTYVO76g7bthsFBE4z0P7qslOSCTS02mtX3BntEyCUnXACda3a4aQbLmt4VXZIOeAEFg0eTZu6EexuGHy2mIl8dI7bXJiGO8pnA/A9ZwN+FYYIwluuxOAECvQMwD4PyAgCl0JR8Ca8yii9MlGC/tsvHnKN35HZMWscM+Ai1Tap/fiX37rjfOQAHLNGRo9TPHUACi+0OEFgxQmYNyrc8sMhufWYjVGZ56cV7o5xsz4wx25i2HPUFJxAimXD4xq2xn5mJ/CkQGuKSx3l+ybZBx5VvhvEfrDeJT4ajnCTjxPTe5wPedlcHYoSq3z1hyOekA57KHGofipHkSwt+RJV/gJWMdD0nEDMnQAAAABJRU5ErkJggg==" />
+            </svg>
+            +966 92 0031 132
+          </p>
+          <p class="footer_item">
+            <img src="/dimofinif_doc/static/src/img/earth.png" alt=""/>
+            <a href="www.dimofinf.sa">www.dimofinf.sa</a>
+          </p>
+        </div>
+      </footer>
+
+    <div class="footer_line">
+      <div class="orange_line orange_line_footer"></div>
+      <div class="blue_line blue_line_footer"></div>
+    </div>
         </xpath>
 
+    </template>
+
+    <template id="custom_external_layout_standard" inherit_id="web.external_layout_standard">
+        <xpath expr="//div[contains(@t-attf-class, 'header')]" position="replace">
+            <div class="header_line">
+                <div class="blue_line"></div>
+                <div class="orange_line"></div>
+            </div>
+            <div class="invoice-wrapper"/>
+            <!-- header -->
+            <header class="header">
+                <div class="logo">
+                    <img src="/dimofinif_doc/static/src/img/logo.png" alt=""/>
+                </div>
+                <div class="dimofinf_data">
+                    <!-- Dimofinf Building no. 2759  Prince Mishaal Bin Abdulaziz St.  Irqah District  Riyadh City Saudi Ara -->
+                    <p class="dimofinf_data_item">Dimensions Of Information</p>
+                    <p class="dimofinf_data_item">2759 Prince Mishaal Bin Abdulaziz St.</p>
+                    <p class="dimofinf_data_item">Riyadh, Irqah District</p>
+                    <p class="dimofinf_data_item">Saudi Arabia</p>
+                    <p class="dimofinf_data_item">TIN:300030623300003</p>
+                    <p class="dimofinf_data_item">
+                        <img src="/dimofinif_doc/static/src/img/phone.png" alt=""/>
+                        +966 92 0031 132
+                    </p>
+                </div>
+            </header>
+        </xpath>
+
+        <xpath expr="//div[contains(@t-attf-class, 'footer')]" position="replace">
+             <footer class="footer">
+        <div class="footer_qr">
+          <img src="/dimofinif_doc/static/src/img/dimqr.png" alt=""/>
+        </div>
+        <div class="footer_content">
+          <p class="footer_item">
+            <img src="/dimofinif_doc/static/src/img/pin.png" alt=""/>
+              Building no. 2759  Prince Mishaal Bin Abdulaziz St.  Irqah District - Riyadh City
+          </p>
+          <p class="footer_item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="39px" height="39px">
+              <image  x="0px" y="0px" width="39px" height="39px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAQAAAAmqpm+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfoDB4RNiTrDkIBAAAB2ElEQVRIx6WVv2tTURTHP/cZpYQYFOsiZjGDi8Rmk+BiCyouXULWVARdXASJg3SpOBgQtZulEEqz9C+QQkHEKhFcXKyIKBIhg+KUEExCjkOf+N7LvS/v3t6z3Hu/533e/XHOPUoINnWRJdo8li5uTQLGDUYIwksOCS4W7N4LDO4fEEctND+geAAcVcYR5QOHHXGU+KPRak44TtDWal1OueCaRnXdGsdCjDokb4t7Fas/s8N5HI+N8rJdUnh8itXTtrh3sRl41zZp54wHMeK6/c0qvmmVPlftw9gTYVO76g7bthsFBE4z0P7qslOSCTS02mtX3BntEyCUnXACda3a4aQbLmt4VXZIOeAEFg0eTZu6EexuGHy2mIl8dI7bXJiGO8pnA/A9ZwN+FYYIwluuxOAECvQMwD4PyAgCl0JR8Ca8yii9MlGC/tsvHnKN35HZMWscM+Ai1Tap/fiX37rjfOQAHLNGRo9TPHUACi+0OEFgxQmYNyrc8sMhufWYjVGZ56cV7o5xsz4wx25i2HPUFJxAimXD4xq2xn5mJ/CkQGuKSx3l+ybZBx5VvhvEfrDeJT4ajnCTjxPTe5wPedlcHYoSq3z1hyOekA57KHGofipHkSwt+RJV/gJWMdD0nEDMnQAAAABJRU5ErkJggg==" />
+            </svg>
+            +966 92 0031 132
+          </p>
+          <p class="footer_item">
+            <img src="/dimofinif_doc/static/src/img/earth.png" alt=""/>
+            <a href="www.dimofinf.sa">www.dimofinf.sa</a>
+          </p>
+        </div>
+      </footer>
+
+    <div class="footer_line">
+      <div class="orange_line orange_line_footer"></div>
+      <div class="blue_line blue_line_footer"></div>
+    </div>
+        </xpath>
     </template>
 </odoo>
