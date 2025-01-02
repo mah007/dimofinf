@@ -92,15 +92,15 @@ p{
 }
 .dimofinf_data_item {
     font-size: 16px;
-    display: flex
-;
+    display: flex;
     align-items: center;
     gap: 12px;
-    line-height: 20px;
+    line-height: 28px;
 }
 .dimofinf_data_item > img{
   width: 20px;
   height: 20px;
+  object-fit: fill;
 }
 /* QR-code wrapper */
 
@@ -196,6 +196,10 @@ p{
   &:last-of-type{
     border: none;
   }
+  &:first-of-type{
+    flex: 2.8;
+    /* padding: 0 2px; */
+  }
 }
 
 /* subtotal table */
@@ -219,6 +223,7 @@ p{
 .left{
   text-align: left;
   padding: 10px;
+  flex: 1 !important;
 }
 
 .footer{
@@ -230,7 +235,7 @@ p{
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 30px;
 }
 
 .footer_qr {
@@ -250,8 +255,31 @@ p{
 .footer_item{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   &:first-of-type{
-    max-width: 380px;
+    max-width: 358px;
+  }
+  & > a{
+    text-decoration: none;
+    color: #000;
+    &:hover{
+      color: #000;
+    }
+  }
+  & > svg {
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    padding: 8px;
+    /* border: 2px solid #3b3b3b; */
+    border-radius: 10px;
+    fill: #3b3b3b;
+    color: #3b3b3b;
+  }
+  & > img {
+    padding: 8px;
+    min-width: 25px;
+    max-width: 25px;
+    height: 25px;
   }
 }
