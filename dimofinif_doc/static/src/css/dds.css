@@ -21,16 +21,25 @@ p{
 
 .header_line {
   width: 100%;
-  height: 20px;
+  height: 32px;
   position: relative;
   z-index: 0;
 }
 
 .footer_line{
   width: 100%;
-  height: 20px;
+  height: 32px;
   position: relative;
   z-index: 0;
+  overflow: hidden;
+}
+
+.header_line > img, .footer_line > img {
+  width: 100%;
+  height: 100%;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
 }
 
 .blue_line{
@@ -40,7 +49,7 @@ p{
   right: 0;
   z-index: 1;
   width: 71%;
-  height: 100%;
+  height: 20px;
   clip-path: polygon(3% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
@@ -56,7 +65,7 @@ p{
   left: 0;
   z-index: 1;
   width: 30%;
-  height: 100%;
+  height: 20px;
   clip-path: polygon(0% 0%, 100% 0%, 93% 100%, 0% 100%);
 }
 .orange_line_footer{
@@ -67,28 +76,35 @@ p{
 
 /* content */
 .invoice-wrapper {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 /* header */
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding-bottom: 16px;
-  border-bottom: 2px solid #3b3b3b90;
-  margin-bottom: 24px;
+  height: 160px;
+  width: 100%;
+  /* padding-bottom: 16px; */
+  /* border-bottom: 2px solid #3b3b3b90; */
+  /* margin-bottom: 24px; */
 }
 
-.logos {
+.header_content{
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 16px 0 16px; */
+}
+
+.logo {
     max-width: 18%;
     max-height: 60px;
 }
 
-.logos img{
+.logo img{
   width: 100%;
-  height: 100%;
+  height: 60px;
 }
 .dimofinf_data_item {
     font-size: 16px;
@@ -154,19 +170,22 @@ p{
 .tax_invoice_header_1, .tax_invoice_header_2, .tax_invoice_header_3 {
   font-size: 20px;
   font-weight: 500;
+  width: 30%;
 }
 .tax_invoice_header_2{
   font-weight: 600;
+  text-align: center;
 }
 .tax_invoice_header_3{
   font-family: "Alexandria", serif;
+  text-align: end;
 }
 .content{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.content > span {
+.content > p {
   width: 30%;
   &:nth-of-type(2){
     /* margin: auto; */
@@ -182,6 +201,9 @@ p{
   border: 1px solid #3b3b3b;
   border-bottom: none;
   margin-bottom: 30px;
+  &:last-of-type{
+    width: 60%;
+  }
 }
 .table_header, .table_content{
   display: flex;
@@ -227,35 +249,43 @@ p{
 }
 
 .footer{
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
 }
+
 .footer_content{
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   flex-wrap: nowrap;
   gap: 30px;
 }
 
+.footer_content_wrapper{
+  justify-content: space-between;
+  padding: 0 0 16px;
+}
+
 .footer_qr {
-    max-width: 70px;
+    /* max-width: 70px;
     min-width: 70px;
     min-height: 70px;
     border: 2px solid #ff9700;
     padding: 4px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 .footer_qr > img {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 .footer_item{
   display: flex;
   align-items: center;
   gap: 6px;
+  margin-bottom: 0;
   &:first-of-type{
     max-width: 358px;
   }
@@ -266,12 +296,12 @@ p{
       color: #000;
     }
   }
-  & > svg {
+  /* & > svg {
     min-width: 20px;
     max-width: 20px;
     height: 20px;
     padding: 8px;
-    /* border: 2px solid #3b3b3b; */
+    border: 2px solid #3b3b3b;
     border-radius: 10px;
     fill: #3b3b3b;
     color: #3b3b3b;
@@ -281,5 +311,10 @@ p{
     min-width: 25px;
     max-width: 25px;
     height: 25px;
-  }
+  } */
+}
+
+.footer_image{
+  width: 100%;
+  height: 140px;
 }
